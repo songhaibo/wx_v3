@@ -1,23 +1,22 @@
 //
-//  RegistTableViewController.m
+//  CallContactsVC.m
 //  RKWXT
 //
-//  Created by RoderickKennedy on 15/3/9.
+//  Created by RoderickKennedy on 15/3/13.
 //  Copyright (c) 2015年 roderick. All rights reserved.
 //
 
-#import "RegistTableViewController.h"
+#import "CallContactsVC.h"
 
-@interface RegistTableViewController ()
+@interface CallContactsVC ()
 
 @end
 
-@implementation RegistTableViewController
+@implementation CallContactsVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        NSLog(@"%s",__func__);
-    // Do any additional setup after loading the view.
+    DDLogWarn(@"%s",__FUNCTION__);
 }
 
 - (void)didReceiveMemoryWarning {

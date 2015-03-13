@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "HttpNetUtils.h"
 #import "ContactsViewController.h"
+//#import "Call"
 #import "Constants.h"
 
 @implementation MainViewController
@@ -41,5 +42,16 @@
     [self presentViewController:navigationController animated:YES completion:nil];
 }
 
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    switch (item.tag) {
+        case 100:
+            break;
+        case 200:
+            
+            break;
+        default:
+            break;
+    }
+}
 
 @end
