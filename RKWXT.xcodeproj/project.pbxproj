@@ -96,7 +96,6 @@
 		2563B4371AAADA9B00C04227 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4361AAADA9B00C04227 /* RegisterViewController.m */; };
 		2563B43A1AAADD5D00C04227 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4391AAADD5D00C04227 /* RootViewController.m */; };
 		2563B43D1AAADE6200C04227 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B43C1AAADE6200C04227 /* BaseViewController.m */; };
-		2563B47F1AAAEF2200C04227 /* YRSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B47E1AAAEF2200C04227 /* YRSideViewController.m */; };
 		2563B4821AAAF06D00C04227 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4811AAAF06D00C04227 /* MainViewController.m */; };
 		2563B4851AAAF22500C04227 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4841AAAF22500C04227 /* LeftMenuViewController.m */; };
 		2563B4881AAAFA7F00C04227 /* 侧边栏背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2563B4871AAAFA7F00C04227 /* 侧边栏背景.jpg */; };
@@ -278,8 +277,6 @@
 		2563B43C1AAADE6200C04227 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		2563B43E1AAADEE400C04227 /* RKWXT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKWXT-Prefix.pch"; sourceTree = "<group>"; };
 		2563B4781AAAE46D00C04227 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		2563B47D1AAAEF2200C04227 /* YRSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideViewController.h; sourceTree = "<group>"; };
-		2563B47E1AAAEF2200C04227 /* YRSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideViewController.m; sourceTree = "<group>"; };
 		2563B4801AAAF06D00C04227 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		2563B4811AAAF06D00C04227 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2563B4831AAAF22500C04227 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
@@ -628,7 +625,6 @@
 				77DB93F21AAFE7310021A816 /* Utils */,
 				77DB93E51AAFE6EA0021A816 /* Model */,
 				2563B4861AAAFA7500C04227 /* Resources */,
-				2563B47C1AAAEF2200C04227 /* YRSideViewController */,
 				2563B3EB1AAAD74000C04227 /* AppDelegate.h */,
 				2563B3EC1AAAD74000C04227 /* AppDelegate.m */,
 				2563B4351AAADA9B00C04227 /* RegisterViewController.h */,
@@ -691,15 +687,6 @@
 				2563B4051AAAD74000C04227 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2563B47C1AAAEF2200C04227 /* YRSideViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2563B47D1AAAEF2200C04227 /* YRSideViewController.h */,
-				2563B47E1AAAEF2200C04227 /* YRSideViewController.m */,
-			);
-			path = YRSideViewController;
 			sourceTree = "<group>";
 		};
 		2563B4861AAAFA7500C04227 /* Resources */ = {
@@ -1066,7 +1053,6 @@
 				120A2BEF1AB135DE006A28B1 /* BalanceEntity.m in Sources */,
 				77DB93FF1AAFE7DC0021A816 /* ChineseToPinyin.m in Sources */,
 				77DB94161AAFE9DD0021A816 /* LoadLabel.m in Sources */,
-				2563B47F1AAAEF2200C04227 /* YRSideViewController.m in Sources */,
 				120A2BEE1AB135DD006A28B1 /* T_SignGifView.m in Sources */,
 				120A2BF21AB135DE006A28B1 /* UserInfoCommonCell.m in Sources */,
 				2563B4821AAAF06D00C04227 /* MainViewController.m in Sources */,
