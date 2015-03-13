@@ -13,7 +13,7 @@
 #import "HttpNetUtils.h"
 #import "MBProgressHUD.h"
 #import "Constants.h"
-#import "YRSideViewController.h"
+//#import "YRSideViewController.h"
 @interface LoginViewController ()
 
 @end
@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];	NSLog(@"%s",__func__);
-    [self rootPager];
+//    [self rootPager];
 //    [HttpNetUtils loginHttpActionWith:@"15338891547" andPasswd:@"123456" andCallback:^(id obj){
 //        if([obj[@"success"] intValue] == 1){
 //            NSLog(@"token:%@\tuser_id:%@",obj[@"token"],obj[@"user_id"]);
@@ -77,7 +77,7 @@
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
 }
-
+/*
 -(void)rootPager{
 	NSLog(@"%s",__func__);
     UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -93,7 +93,7 @@
 //    [self presentViewController:_sideViewController animated:YES completion:nil];
     [[APP_DELEGATE window] setRootViewController:_sideViewController];
 //    [self.navigationController presentViewController:_sideViewController animated:YES completion:nil];
-}
+}*/
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -124,7 +124,7 @@
                 NSLog(@"token:%@\tuser_id:%@",obj[@"token"],obj[@"user_id"]);
                 [USER_DEFAULT setObject:obj[@"token"] forKey:@"token"];
                 [USER_DEFAULT setObject:obj[@"user_id"] forKey:@"userId"];
-                [self rootPager];
+//                [self rootPager];
             }
         }];
     }

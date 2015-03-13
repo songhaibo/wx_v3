@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZQ6-J1-D2C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j60-g1-AUt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -189,7 +189,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登    录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPU-lH-C58">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="登    录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPU-lH-C58">
                                                 <rect key="frame" x="129" y="10" width="62" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,51 +234,31 @@
         <scene sceneID="Gq5-wc-BCk">
             <objects>
                 <viewController storyboardIdentifier="MainCtrl" id="UZ4-Hb-qC7" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="43U-ee-dln"/>
+                        <viewControllerLayoutGuide type="bottom" id="6qK-zE-EvX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rVh-ii-hZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-dS-1mz">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="商城" id="oeP-ro-Wdd"/>
+                                    <tabBarItem title="通话" id="EPH-zZ-Gcu"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5rI-ZM-Lqz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="callPhoneTextField" destination="zSP-zR-EC2" id="yKO-OD-1X0"/>
-                        <outlet property="view" destination="zy2-hL-kK0" id="Zjd-fH-frT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27H-g9-IjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="zy2-hL-kK0">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-88-eGu">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbX-VJ-6UJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                    <state key="normal" title="通讯录">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="contactsPage:" destination="UZ4-Hb-qC7" eventType="touchDragInside" id="SDl-gB-9CB"/>
-                                    </connections>
-                                </button>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入拨打号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zSP-zR-EC2">
-                                    <rect key="frame" x="100" y="100" width="200" height="30"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN2-6r-xJr">
-                                    <rect key="frame" x="100" y="140" width="100" height="30"/>
-                                    <state key="normal" title="回拨">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="callBackPhone:" destination="UZ4-Hb-qC7" eventType="touchDragInside" id="ZMG-1q-Mmd"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
             </objects>
-            <point key="canvasLocation" x="717" y="-664"/>
+            <point key="canvasLocation" x="867" y="64"/>
         </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="NAw-pm-rPh">
@@ -316,7 +296,7 @@
         <!--Navigation Controller-->
         <scene sceneID="HBO-Z2-lZX">
             <objects>
-                <navigationController id="j60-g1-AUt" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="j60-g1-AUt" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OFF-bZ-NMk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -325,10 +305,13 @@
                             <outlet property="delegate" destination="j60-g1-AUt" id="FX0-yy-5gu"/>
                         </connections>
                     </navigationBar>
+                    <connections>
+                        <segue destination="UZ4-Hb-qC7" kind="relationship" relationship="rootViewController" id="mZc-3X-NpZ"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXJ-rG-SQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="370"/>
+            <point key="canvasLocation" x="361" y="64"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="QEd-x2-29X">
@@ -520,6 +503,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="1279" y="64"/>
         </scene>
         <!--Call View Controller-->
         <scene sceneID="ANd-Cw-Khn">
@@ -792,6 +776,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NP8-z8-RYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-275" y="347"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="73Q-1C-63b">
+            <objects>
+                <viewController id="Vkn-ZM-o6o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DVl-Kv-Hoa"/>
+                        <viewControllerLayoutGuide type="bottom" id="ujY-g4-9dj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GkB-Ca-2wm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="id6-Uq-lv9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3W-XO-gGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="JJl-pX-90s">
+            <objects>
+                <viewController id="em0-S5-JSr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7hN-qD-2Wl"/>
+                        <viewControllerLayoutGuide type="bottom" id="o1C-V0-uze"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vv6-ri-3yw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="u0C-R5-kqK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8R-Z1-s5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0Jc-Jh-WZ8">
+            <objects>
+                <tabBarController id="4IL-Ko-Yyb" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ekz-Hv-B2O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="em0-S5-JSr" kind="relationship" relationship="viewControllers" id="3bn-Gv-a8D"/>
+                        <segue destination="Vkn-ZM-o6o" kind="relationship" relationship="viewControllers" id="u8e-u2-hvj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yE9-3Q-4vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

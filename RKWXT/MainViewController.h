@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UITabBarController
 @property (nonatomic, weak) IBOutlet UITextField * callPhoneTextField;
 @end
