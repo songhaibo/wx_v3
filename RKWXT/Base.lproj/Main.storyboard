@@ -30,7 +30,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="-418"/>
+            <point key="canvasLocation" x="2476" y="-330"/>
         </scene>
         <!--新用户注册-->
         <scene sceneID="fXh-N9-eg8">
@@ -258,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27H-g9-IjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="64"/>
+            <point key="canvasLocation" x="2025" y="-524"/>
         </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="NAw-pm-rPh">
@@ -306,7 +306,7 @@
                         </connections>
                     </navigationBar>
                     <connections>
-                        <segue destination="UZ4-Hb-qC7" kind="relationship" relationship="rootViewController" id="mZc-3X-NpZ"/>
+                        <segue destination="4IL-Ko-Yyb" kind="relationship" relationship="rootViewController" id="RT4-2v-lMR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXJ-rG-SQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,7 +503,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1279" y="64"/>
+            <point key="canvasLocation" x="2285" y="612"/>
         </scene>
         <!--Call View Controller-->
         <scene sceneID="ANd-Cw-Khn">
@@ -777,10 +777,10 @@
             </objects>
             <point key="canvasLocation" x="-275" y="347"/>
         </scene>
-        <!--Item 2-->
+        <!--通话-->
         <scene sceneID="73Q-1C-63b">
             <objects>
-                <viewController id="Vkn-ZM-o6o" sceneMemberID="viewController">
+                <viewController id="Vkn-ZM-o6o" customClass="CallContactsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DVl-Kv-Hoa"/>
                         <viewControllerLayoutGuide type="bottom" id="ujY-g4-9dj"/>
@@ -788,15 +788,34 @@
                     <view key="view" contentMode="scaleToFill" id="GkB-Ca-2wm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wsK-Mc-HcF">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="C8k-ny-NX0">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="USd-Dx-9QP">
+                                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="通话"/>
+                                                <segment title="通讯录"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="id6-Uq-lv9"/>
+                    <tabBarItem key="tabBarItem" tag="200" title="通话" id="id6-Uq-lv9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3W-XO-gGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1496" y="489"/>
         </scene>
-        <!--Item 1-->
+        <!--商城-->
         <scene sceneID="JJl-pX-90s">
             <objects>
                 <viewController id="em0-S5-JSr" sceneMemberID="viewController">
@@ -809,16 +828,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="u0C-R5-kqK"/>
+                    <tabBarItem key="tabBarItem" title="商城" id="u0C-R5-kqK"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8R-Z1-s5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1488" y="-524"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="0Jc-Jh-WZ8">
             <objects>
-                <tabBarController id="4IL-Ko-Yyb" sceneMemberID="viewController">
+                <tabBarController id="4IL-Ko-Yyb" customClass="MainViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="phm-TY-8gW"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Ekz-Hv-B2O">
@@ -833,6 +854,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yE9-3Q-4vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="868" y="64"/>
         </scene>
     </scenes>
     <resources>

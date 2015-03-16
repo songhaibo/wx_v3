@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 #import "HttpNetUtils.h"
 #import "ContactsViewController.h"
-//#import "Call"
+#import "CallContactsVC.h"
 #import "Constants.h"
 
 @implementation MainViewController
@@ -22,6 +22,9 @@
 //    [HttpNetUtils callPhoneActionWith:userId andCalled:@"17093432980" andCallback:^(id obj){
 //        NSLog(@"%sresponseObject:%@\nmsg:%@",__func__,obj,obj[@"msg"]);
 //    }];
+    
+    
+//    [NOTIFY_CENTER postNotificationName:@"pageChange" object:sender];
 }
 
 -(IBAction)callBackPhone:(id)sender{
@@ -43,15 +46,22 @@
 }
 
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    CallContactsVC * callVC = []
     switch (item.tag) {
         case 100:
             break;
         case 200:
-            
+//            [self.view addSubview:];
+            DDLogWarn(@"%s",__FUNCTION__);
             break;
         default:
             break;
     }
+}
+
+-(void)pageChange{
+    
 }
 
 @end

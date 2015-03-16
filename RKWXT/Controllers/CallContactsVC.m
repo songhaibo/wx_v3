@@ -34,4 +34,19 @@
 }
 */
 
+-(IBAction)segmentChange:(id)sender{
+    switch ([(UISegmentedControl *)sender selectedSegmentIndex]) {
+        case 0:{
+            
+        }
+            break;
+        case 1:{
+            
+        }
+            break;
+        default:
+            break;
+    }
+}
+
 @end
