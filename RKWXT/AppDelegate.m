@@ -11,9 +11,19 @@
 #import "ContactsViewController.h"
 #import "IQKeyboardManager.h"
 #import "DDFileLogger.h"
+<<<<<<< HEAD
 #import "RegistVC.h"
 #import "LoadingViewController.h"
 @interface AppDelegate ()
+=======
+#import "LoginVC.h"
+#import "WXTUITabBarController.h"
+#import "WXTVersion.h"
+
+@interface AppDelegate (){
+    UINavigationController *_navigation;
+}
+>>>>>>> origin/wxt_version1
 
 @end
 
@@ -52,6 +62,7 @@
 #endif
     NSLog(@"%@", DOC_PATH);
 	[self initUI];
+    [self checkVersion];
 	return YES;
 }
 
@@ -69,6 +80,12 @@
         return NO;
     }
     return YES;
+}
+
+-(void)checkVersion{
+    WXTVersion *version = [WXTVersion sharedVersion];
+    [version setCheckType:Version_CheckType_System];
+    [version checkVersion];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
