@@ -59,7 +59,7 @@
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	self.window.backgroundColor = [UIColor whiteColor];
 //    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[LoadingViewController alloc] init]];
-    [self.window setRootViewController:[[RegistVC alloc] init]];
+    [self.window setRootViewController:[[ContactsViewController alloc] init]];
     [self.window makeKeyAndVisible];
 }
 
