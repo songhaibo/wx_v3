@@ -12,6 +12,7 @@
 #import "IQKeyboardManager.h"
 #import "DDFileLogger.h"
 #import "RegistVC.h"
+#import "LoadingViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -50,23 +51,15 @@
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];// 允许颜色
 #endif
     NSLog(@"%@", DOC_PATH);
-//	[self initUI];
+	[self initUI];
 	return YES;
 }
 
 -(void)initUI{
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	self.window.backgroundColor = [UIColor whiteColor];
-
-//	UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//	MainViewController * mainCtrl = [storyBoard instantiateViewControllerWithIdentifier:@"MainCtrl"];
-//	LeftMenuViewController * leftMenuCtrl = [storyBoard instantiateViewControllerWithIdentifier:@"LeftMenu"];
-//	_sideViewController = [[YRSideViewController alloc] initWithNibName:nil bundle:nil];
-//	_sideViewController.rootViewController = mainCtrl;
-//	_sideViewController.leftViewController = leftMenuCtrl;
-//	self.window.rootViewController = _sideViewController;
-    RegistVC *vc = [[RegistVC alloc] init];
-    [self.window setRootViewController:vc];
+//    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[LoadingViewController alloc] init]];
+    [self.window setRootViewController:[[RegistVC alloc] init]];
     [self.window makeKeyAndVisible];
 }
 
