@@ -29,26 +29,19 @@ enum{
 
 @implementation RechargeVC
 
--(void)dealloc{
-    [_rechargeView setDelegate:nil];
-}
-
--(id)init{
-    self = [super init];
-    if(self){
-//        CGFloat yOffset = 380;
-        
-    }
-    return self;
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+    self.title = @"充值中心";
+    self.navigationItem.backBarButtonItem.title = @"返回";
 }
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    [self.navigationController setTitle:@"充值中心"];
     [self.view setBackgroundColor:WXColorWithInteger(0xefeff4)];
     
     _tableView = [[UITableView alloc] init];
-    _tableView.frame = CGRectMake(0, HeadViewHeight, Size.width, Size.height-HeadViewHeight);
+    _tableView.frame = CGRectMake(0, 0, Size.width, Size.height-HeadViewHeight);
     [_tableView setDelegate:self];
     [_tableView setDataSource:self];
     [_tableView setScrollEnabled:NO];
@@ -75,15 +68,16 @@ enum{
 -(UIView*)tableForHeadView{
     UIView *headView = [[UIView alloc] init];
     
+    WXTUserOBJ *userDefault = [WXTUserOBJ sharedUserOBJ];
     CGFloat yOffset = 15;
     CGFloat labelHeight = 18;
     UILabel *phoneLabel = [[UILabel alloc] init];
     phoneLabel.frame = CGRectMake(0, yOffset, Size.width, labelHeight);
     [phoneLabel setBackgroundColor:[UIColor clearColor]];
     [phoneLabel setTextAlignment:NSTextAlignmentCenter];
-    [phoneLabel setTextColor:[UIColor blackColor]];
-    [phoneLabel setText:@"充值帐号:18613213051"];
+    [phoneLabel setText:[NSString stringWithFormat:@"充值账号: %@",userDefault.user]];
     [phoneLabel setFont:WXTFont(15.0)];
+    [phoneLabel setTextColor:WXColorWithInteger(0x323232)];
     [headView addSubview:phoneLabel];
     
     yOffset += labelHeight+10;

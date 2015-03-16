@@ -40,9 +40,13 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
 -(void)viewDidLoad{
     [super viewDidLoad];
-    [self.navigationController setTitle:@"每日签到"];
     
     UIImageView *imgView = [[UIImageView alloc] init];
     imgView.frame = CGRectMake(0, 0, Size.width, Size.height);
@@ -55,6 +59,7 @@
     [self createRewardLabel];
     [self createSignBtn];
 //    [self createView];
+    [self createBackBtn];
 }
 
 //-(void)createView{
@@ -63,6 +68,19 @@
 //    [_maskView setAlpha:0.0];
 //    [self addSubview:_maskView];
 //}
+
+-(void)createBackBtn{
+    CGFloat xOffset = 20;
+    CGFloat yOffset = 30;
+    UIImage *img = [UIImage imageNamed:@"T_Back.png"];
+    WXTUIButton *backBtn = [WXTUIButton buttonWithType:UIButtonTypeCustom];
+    backBtn.frame = CGRectMake(xOffset, yOffset, img.size.width, img.size.height);
+    [backBtn setImage:[UIImage imageNamed:@"T_Back.png"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:@"T_BackSel.png"] forState:UIControlStateSelected];
+    [backBtn setBackgroundColor:[UIColor clearColor]];
+    [backBtn addTarget:self action:@selector(backToLastPage) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backBtn];
+}
 
 -(void)createTextLabel{
     CGFloat yOffset = 60;
@@ -119,8 +137,8 @@
     [self.view addSubview:_signBtn];
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSString *time = [userDefaults objectForKey:LastSignDate];
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:[time integerValue]];
+    NSInteger time = [userDefaults integerForKey:LastSignDate];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:time];
     NSString *timeString = [date YMDHMString:E_YMD];
     if([timeString isEqualToString:@"今天"]){
         [_signBtn setEnabled:NO];
@@ -159,11 +177,13 @@
 //}
 
 -(void)signBtnClicked{
+    [self showWaitView:self.view];
     [_model signGainMoney];
     T_SignGifView *gifView = [[T_SignGifView alloc] initWithFrame:CGRectMake(0, 0, Size.width, Size.height)];
     [self.view addSubview:gifView];
     [_signBtn setEnabled:NO];
-    [self performSelector:@selector(showAlert) withObject:nil afterDelay:kAnimateDuration];
+    
+//    [self performSelector:@selector(showAlert) withObject:nil afterDelay:kAnimateDuration];
 }
 
 -(void)showAlert{
@@ -171,16 +191,27 @@
 }
 
 -(void)signSucceed{
+    [self unShowWaitView];
+    
     [_signBtn setEnabled:NO];
     if([_model.signArr count] > 0){
         signEntity = [_model.signArr objectAtIndex:0];
-        [UtilTool showAlertView:signEntity.message];
+        NSString *message = @"签到成功";
+        if(signEntity.message){
+            message = signEntity.message;
+        }
+        [UtilTool showAlertView:message];
         [_textLabel setText:[NSString stringWithFormat:@"我的奖励:%f元",signEntity.money]];
     }
 }
 
 -(void)signFailed:(NSString *)errorMsg{
+    [self unShowWaitView];
     [UtilTool showAlertView:errorMsg];
+}
+
+-(void)backToLastPage{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 -(void)tappedOnDate:(NSDate *)selectedDate{
