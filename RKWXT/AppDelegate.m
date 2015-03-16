@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 //#import "MainViewController.h"
-//#import "LeftMenuViewController.h"
+#import "ContactsViewController.h"
 #import "IQKeyboardManager.h"
 #import "DDFileLogger.h"
 #import "RegistVC.h"
