@@ -32,7 +32,6 @@
 		120A2C011AB13900006A28B1 /* Sign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120A2BFC1AB13900006A28B1 /* Sign@2x.png */; };
 		120A2C021AB13900006A28B1 /* Wallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120A2BFD1AB13900006A28B1 /* Wallet@2x.png */; };
 		120A2C041AB13CB9006A28B1 /* portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120A2C031AB13CB9006A28B1 /* portrait@2x.png */; };
-		120A2C081AB142D4006A28B1 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 120A2C071AB142D4006A28B1 /* LoginVC.m */; };
 		120A2C0B1AB16907006A28B1 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 120A2C0A1AB16907006A28B1 /* UIImage+Render.m */; };
 		120A2C0E1AB1699F006A28B1 /* WXTUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 120A2C0D1AB1699F006A28B1 /* WXTUIButton.m */; };
 		120A2C121AB17038006A28B1 /* RechargeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 120A2C111AB17038006A28B1 /* RechargeModel.m */; };
@@ -90,7 +89,6 @@
 		126CA3DE1AB2790D00E08A0B /* WXTMallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 126CA3DD1AB2790D00E08A0B /* WXTMallVC.m */; };
 		126CA3E71AB2844B00E08A0B /* UIDevice+screenType.m in Sources */ = {isa = PBXBuildFile; fileRef = 126CA3E61AB2844B00E08A0B /* UIDevice+screenType.m */; };
 		126CA3F51AB2B74800E08A0B /* WXTUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 126CA3F41AB2B74800E08A0B /* WXTUITabBarController.m */; };
-		126CA3F81AB2B84000E08A0B /* CallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 126CA3F71AB2B84000E08A0B /* CallVC.m */; };
 		126CA4021AB2B9EF00E08A0B /* FindSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126CA3F91AB2B9EF00E08A0B /* FindSelected@2x.png */; };
 		126CA4031AB2B9EF00E08A0B /* FindNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126CA3FA1AB2B9EF00E08A0B /* FindNormal@2x.png */; };
 		126CA4041AB2B9EF00E08A0B /* MallSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126CA3FB1AB2B9EF00E08A0B /* MallSelected@2x.png */; };
@@ -100,11 +98,9 @@
 		126CA4081AB2B9EF00E08A0B /* UserSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126CA3FF1AB2B9EF00E08A0B /* UserSelected@2x.png */; };
 		126CA4091AB2B9EF00E08A0B /* UserNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126CA4001AB2B9EF00E08A0B /* UserNormal@2x.png */; };
 		126CA40A1AB2B9EF00E08A0B /* 我信通IOS Android接口文档(1).pages in Resources */ = {isa = PBXBuildFile; fileRef = 126CA4011AB2B9EF00E08A0B /* 我信通IOS Android接口文档(1).pages */; };
-		126CA40F1AB2DB1200E08A0B /* FetchPwdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 126CA40E1AB2DB1200E08A0B /* FetchPwdModel.m */; };
 		126CA4121AB2FC9400E08A0B /* GainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 126CA4111AB2FC9400E08A0B /* GainModel.m */; };
 		126CA4151AB30F5E00E08A0B /* T_Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126CA4131AB30F5E00E08A0B /* T_Back@2x.png */; };
 		126CA4161AB30F5E00E08A0B /* T_BackSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126CA4141AB30F5E00E08A0B /* T_BackSel@2x.png */; };
-		12D039F11AB3489200DD7E56 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D039F01AB3489200DD7E56 /* BaseVC.m */; };
 		12D0C8671AB673910039A197 /* wxtRecharge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D0C8661AB673910039A197 /* wxtRecharge@2x.png */; };
 		12D0C8691AB67B9A0039A197 /* LoadDataLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D0C8681AB67B9A0039A197 /* LoadDataLogo@2x.png */; };
 		1F036786D135E645F286F56B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 373B14107C952AC77813F98A /* libPods.a */; };
@@ -117,24 +113,23 @@
 		2563B3FB1AAAD74000C04227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2563B3F91AAAD74000C04227 /* LaunchScreen.xib */; };
 		2563B4071AAAD74000C04227 /* RKWXTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4061AAAD74000C04227 /* RKWXTTests.m */; };
 		2563B4371AAADA9B00C04227 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4361AAADA9B00C04227 /* RegisterViewController.m */; };
-		2563B43A1AAADD5D00C04227 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4391AAADD5D00C04227 /* RootViewController.m */; };
-		2563B43D1AAADE6200C04227 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B43C1AAADE6200C04227 /* BaseViewController.m */; };
-		2563B4821AAAF06D00C04227 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4811AAAF06D00C04227 /* MainViewController.m */; };
-		2563B4851AAAF22500C04227 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B4841AAAF22500C04227 /* LeftMenuViewController.m */; };
 		2563B4881AAAFA7F00C04227 /* 侧边栏背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2563B4871AAAFA7F00C04227 /* 侧边栏背景.jpg */; };
 		2563B48B1AAAFF6B00C04227 /* HttpNetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2563B48A1AAAFF6B00C04227 /* HttpNetUtils.m */; };
 		770BB43A1AAD97700098C214 /* 密码图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770BB4371AAD97700098C214 /* 密码图标@2x.png */; };
 		770BB43B1AAD97700098C214 /* 账号图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770BB4381AAD97700098C214 /* 账号图标@2x.png */; };
 		770BB43C1AAD97700098C214 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = 770BB4391AAD97700098C214 /* W.png */; };
-		770BB43F1AAD9D530098C214 /* 启动页（iPhone4）.png in Resources */ = {isa = PBXBuildFile; fileRef = 770BB43D1AAD9D530098C214 /* 启动页（iPhone4）.png */; };
-		770BB4401AAD9D530098C214 /* 启动页（iPhone5）.png in Resources */ = {isa = PBXBuildFile; fileRef = 770BB43E1AAD9D530098C214 /* 启动页（iPhone5）.png */; };
-		776CFF9E1AB11E07000A1D84 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776CFF9D1AB11E07000A1D84 /* ContactsViewController.m */; };
 		776CFFA81AB1257B000A1D84 /* ARLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776CFFA71AB1257B000A1D84 /* ARLabel.m */; };
 		777059AD1AAFDEC40097526C /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 777059AB1AAFDEC40097526C /* Localize.strings */; };
 		777059B51AAFE48C0097526C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777059B31AAFE48C0097526C /* AddressBook.framework */; };
 		777059B61AAFE48C0097526C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777059B41AAFE48C0097526C /* AddressBookUI.framework */; };
-		778289501AAD3F61009E9BF3 /* RegistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782894F1AAD3F61009E9BF3 /* RegistTableViewController.m */; };
 		77A1B9061AB027D5008C1C85 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A1B9051AB027D5008C1C85 /* CallViewController.m */; };
+		77AC197C1AB6D8BB00E10559 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC197B1AB6D8BB00E10559 /* BaseViewController.m */; };
+		77AC197F1AB6D90200E10559 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC197E1AB6D90200E10559 /* BaseVC.m */; };
+		77AC19881AB6DACF00E10559 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC19871AB6DACF00E10559 /* LoginVC.m */; };
+		77AC198A1AB6DB7600E10559 /* FetchPwdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 126CA40E1AB2DB1200E08A0B /* FetchPwdModel.m */; };
+		77AC19921AB6DCA600E10559 /* CallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC19911AB6DCA600E10559 /* CallVC.m */; };
+		77AC19951AB6E26400E10559 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC19941AB6E26400E10559 /* ContactsViewController.m */; };
+		77AC19981AB6E72800E10559 /* UIColor+WX.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC19971AB6E72800E10559 /* UIColor+WX.m */; };
 		77D52CC51AB01EAA00F35A6B /* ContactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D52CC41AB01EAA00F35A6B /* ContactsCell.xib */; };
 		77DB93E81AAFE6F50021A816 /* ContactData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DB93E71AAFE6F50021A816 /* ContactData.m */; };
 		77DB93EF1AAFE70D0021A816 /* PhoneData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DB93EA1AAFE70D0021A816 /* PhoneData.m */; };
@@ -214,8 +209,6 @@
 		120A2BFC1AB13900006A28B1 /* Sign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign@2x.png"; sourceTree = "<group>"; };
 		120A2BFD1AB13900006A28B1 /* Wallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wallet@2x.png"; sourceTree = "<group>"; };
 		120A2C031AB13CB9006A28B1 /* portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portrait@2x.png"; sourceTree = "<group>"; };
-		120A2C061AB142D4006A28B1 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
-		120A2C071AB142D4006A28B1 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		120A2C091AB16907006A28B1 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
 		120A2C0A1AB16907006A28B1 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
 		120A2C0C1AB1699F006A28B1 /* WXTUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTUIButton.h; sourceTree = "<group>"; };
@@ -291,8 +284,6 @@
 		126CA3E61AB2844B00E08A0B /* UIDevice+screenType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+screenType.m"; sourceTree = "<group>"; };
 		126CA3F31AB2B74800E08A0B /* WXTUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTUITabBarController.h; sourceTree = "<group>"; };
 		126CA3F41AB2B74800E08A0B /* WXTUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTUITabBarController.m; sourceTree = "<group>"; };
-		126CA3F61AB2B84000E08A0B /* CallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallVC.h; sourceTree = "<group>"; };
-		126CA3F71AB2B84000E08A0B /* CallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallVC.m; sourceTree = "<group>"; };
 		126CA3F91AB2B9EF00E08A0B /* FindSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FindSelected@2x.png"; sourceTree = "<group>"; };
 		126CA3FA1AB2B9EF00E08A0B /* FindNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FindNormal@2x.png"; sourceTree = "<group>"; };
 		126CA3FB1AB2B9EF00E08A0B /* MallSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MallSelected@2x.png"; sourceTree = "<group>"; };
@@ -308,8 +299,6 @@
 		126CA4111AB2FC9400E08A0B /* GainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GainModel.m; sourceTree = "<group>"; };
 		126CA4131AB30F5E00E08A0B /* T_Back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T_Back@2x.png"; sourceTree = "<group>"; };
 		126CA4141AB30F5E00E08A0B /* T_BackSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T_BackSel@2x.png"; sourceTree = "<group>"; };
-		12D039EF1AB3489200DD7E56 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
-		12D039F01AB3489200DD7E56 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		12D0C8661AB673910039A197 /* wxtRecharge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wxtRecharge@2x.png"; sourceTree = "<group>"; };
 		12D0C8681AB67B9A0039A197 /* LoadDataLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadDataLogo@2x.png"; sourceTree = "<group>"; };
 		2563B3E41AAAD74000C04227 /* RKWXT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKWXT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,16 +317,8 @@
 		2563B4061AAAD74000C04227 /* RKWXTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKWXTTests.m; sourceTree = "<group>"; };
 		2563B4351AAADA9B00C04227 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		2563B4361AAADA9B00C04227 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		2563B4381AAADD5D00C04227 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		2563B4391AAADD5D00C04227 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		2563B43B1AAADE6200C04227 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		2563B43C1AAADE6200C04227 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		2563B43E1AAADEE400C04227 /* RKWXT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKWXT-Prefix.pch"; sourceTree = "<group>"; };
 		2563B4781AAAE46D00C04227 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		2563B4801AAAF06D00C04227 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		2563B4811AAAF06D00C04227 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		2563B4831AAAF22500C04227 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
-		2563B4841AAAF22500C04227 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		2563B4871AAAFA7F00C04227 /* 侧边栏背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "侧边栏背景.jpg"; sourceTree = "<group>"; };
 		2563B4891AAAFF6B00C04227 /* HttpNetUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpNetUtils.h; sourceTree = "<group>"; };
 		2563B48A1AAAFF6B00C04227 /* HttpNetUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpNetUtils.m; sourceTree = "<group>"; };
@@ -346,20 +327,26 @@
 		770BB4371AAD97700098C214 /* 密码图标@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码图标@2x.png"; sourceTree = "<group>"; };
 		770BB4381AAD97700098C214 /* 账号图标@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号图标@2x.png"; sourceTree = "<group>"; };
 		770BB4391AAD97700098C214 /* W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W.png; sourceTree = "<group>"; };
-		770BB43D1AAD9D530098C214 /* 启动页（iPhone4）.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页（iPhone4）.png"; sourceTree = "<group>"; };
-		770BB43E1AAD9D530098C214 /* 启动页（iPhone5）.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页（iPhone5）.png"; sourceTree = "<group>"; };
-		776CFF9C1AB11E07000A1D84 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
-		776CFF9D1AB11E07000A1D84 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		776CFFA61AB1257B000A1D84 /* ARLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLabel.h; sourceTree = "<group>"; };
 		776CFFA71AB1257B000A1D84 /* ARLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLabel.m; sourceTree = "<group>"; };
 		777059AC1AAFDEC40097526C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localize.strings; sourceTree = "<group>"; };
 		777059AE1AAFDEEB0097526C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localize.strings"; sourceTree = "<group>"; };
 		777059B31AAFE48C0097526C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		777059B41AAFE48C0097526C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		7782894E1AAD3F61009E9BF3 /* RegistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistTableViewController.h; sourceTree = "<group>"; };
-		7782894F1AAD3F61009E9BF3 /* RegistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistTableViewController.m; sourceTree = "<group>"; };
 		77A1B9041AB027D5008C1C85 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
 		77A1B9051AB027D5008C1C85 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		77AC197A1AB6D8BB00E10559 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		77AC197B1AB6D8BB00E10559 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		77AC197D1AB6D90200E10559 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		77AC197E1AB6D90200E10559 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		77AC19861AB6DACF00E10559 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		77AC19871AB6DACF00E10559 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		77AC19901AB6DCA600E10559 /* CallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallVC.h; path = RKWXT/WXTCall/CallVC.h; sourceTree = SOURCE_ROOT; };
+		77AC19911AB6DCA600E10559 /* CallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallVC.m; path = RKWXT/WXTCall/CallVC.m; sourceTree = SOURCE_ROOT; };
+		77AC19931AB6E26400E10559 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsViewController.h; path = RKWXT/WXTCall/ContactsViewController.h; sourceTree = SOURCE_ROOT; };
+		77AC19941AB6E26400E10559 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsViewController.m; path = RKWXT/WXTCall/ContactsViewController.m; sourceTree = SOURCE_ROOT; };
+		77AC19961AB6E72800E10559 /* UIColor+WX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WX.h"; sourceTree = "<group>"; };
+		77AC19971AB6E72800E10559 /* UIColor+WX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WX.m"; sourceTree = "<group>"; };
 		77D52CC41AB01EAA00F35A6B /* ContactsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsCell.xib; sourceTree = "<group>"; };
 		77DB93E61AAFE6F50021A816 /* ContactData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactData.h; sourceTree = "<group>"; };
 		77DB93E71AAFE6F50021A816 /* ContactData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactData.m; sourceTree = "<group>"; };
@@ -572,8 +559,8 @@
 		120A2C051AB1427C006A28B1 /* LoginAndRegist */ = {
 			isa = PBXGroup;
 			children = (
-				120A2C061AB142D4006A28B1 /* LoginVC.h */,
-				120A2C071AB142D4006A28B1 /* LoginVC.m */,
+				77AC19861AB6DACF00E10559 /* LoginVC.h */,
+				77AC19871AB6DACF00E10559 /* LoginVC.m */,
 				12228A711AB1BABA00CF0800 /* RegistVC.h */,
 				12228A721AB1BABA00CF0800 /* RegistVC.m */,
 				12228A691AB1B1C300CF0800 /* Model */,
@@ -718,6 +705,9 @@
 		2563B3E61AAAD74000C04227 /* RKWXT */ = {
 			isa = PBXGroup;
 			children = (
+				77AC198B1AB6DC4200E10559 /* WXTCall */,
+				77AC197D1AB6D90200E10559 /* BaseVC.h */,
+				77AC197E1AB6D90200E10559 /* BaseVC.m */,
 				77DB942F1AAFF2090021A816 /* Cells */,
 				77DB94251AAFEEBC0021A816 /* UserAgent.h */,
 				77DB94261AAFEEBC0021A816 /* UserAgent.m */,
@@ -733,10 +723,6 @@
 				2563B4361AAADA9B00C04227 /* RegisterViewController.m */,
 				2563B3F11AAAD74000C04227 /* LoginViewController.h */,
 				2563B3F21AAAD74000C04227 /* LoginViewController.m */,
-				126CA3F61AB2B84000E08A0B /* CallVC.h */,
-				126CA3F71AB2B84000E08A0B /* CallVC.m */,
-				12D039EF1AB3489200DD7E56 /* BaseVC.h */,
-				12D039F01AB3489200DD7E56 /* BaseVC.m */,
 				126CA3F21AB2B71100E08A0B /* WXTUITabBar */,
 				126CA3D71AB278EB00E08A0B /* WXTFind */,
 				126CA3D81AB278EB00E08A0B /* WXTMall */,
@@ -754,18 +740,8 @@
 				2563B3F91AAAD74000C04227 /* LaunchScreen.xib */,
 				2563B3EE1AAAD74000C04227 /* RKWXT.xcdatamodeld */,
 				2563B3E71AAAD74000C04227 /* Supporting Files */,
-				2563B4381AAADD5D00C04227 /* RootViewController.h */,
-				2563B4391AAADD5D00C04227 /* RootViewController.m */,
-				2563B43B1AAADE6200C04227 /* BaseViewController.h */,
-				2563B43C1AAADE6200C04227 /* BaseViewController.m */,
-				2563B4801AAAF06D00C04227 /* MainViewController.h */,
-				2563B4811AAAF06D00C04227 /* MainViewController.m */,
-				2563B4831AAAF22500C04227 /* LeftMenuViewController.h */,
-				2563B4841AAAF22500C04227 /* LeftMenuViewController.m */,
 				2563B4891AAAFF6B00C04227 /* HttpNetUtils.h */,
 				2563B48A1AAAFF6B00C04227 /* HttpNetUtils.m */,
-				7782894E1AAD3F61009E9BF3 /* RegistTableViewController.h */,
-				7782894F1AAD3F61009E9BF3 /* RegistTableViewController.m */,
 			);
 			path = RKWXT;
 			sourceTree = "<group>";
@@ -813,8 +789,6 @@
 				120A2C181AB17AFD006A28B1 /* signBg.jpg */,
 				120A2C191AB17AFD006A28B1 /* signBg@2x.jpg */,
 				120A2C1A1AB17AFD006A28B1 /* SignGifView */,
-				770BB43D1AAD9D530098C214 /* 启动页（iPhone4）.png */,
-				770BB43E1AAD9D530098C214 /* 启动页（iPhone5）.png */,
 				770BB4371AAD97700098C214 /* 密码图标@2x.png */,
 				770BB4381AAD97700098C214 /* 账号图标@2x.png */,
 				770BB4391AAD97700098C214 /* W.png */,
@@ -838,6 +812,18 @@
 				126CA4011AB2B9EF00E08A0B /* 我信通IOS Android接口文档(1).pages */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		77AC198B1AB6DC4200E10559 /* WXTCall */ = {
+			isa = PBXGroup;
+			children = (
+				77AC19931AB6E26400E10559 /* ContactsViewController.h */,
+				77AC19941AB6E26400E10559 /* ContactsViewController.m */,
+				77AC19901AB6DCA600E10559 /* CallVC.h */,
+				77AC19911AB6DCA600E10559 /* CallVC.m */,
+			);
+			name = WXTCall;
+			path = WXTCallContacts;
 			sourceTree = "<group>";
 		};
 		77DB93E51AAFE6EA0021A816 /* Model */ = {
@@ -872,6 +858,8 @@
 		77DB93F61AAFE7890021A816 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				77AC19961AB6E72800E10559 /* UIColor+WX.h */,
+				77AC19971AB6E72800E10559 /* UIColor+WX.m */,
 				77DB94391AAFF3830021A816 /* UIView+Sizing.h */,
 				77DB943A1AAFF3830021A816 /* UIView+Sizing.m */,
 				77DB942C1AAFF0BE0021A816 /* NSDictionary+Plist.h */,
@@ -902,8 +890,8 @@
 		77DB941D1AAFED330021A816 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				776CFF9C1AB11E07000A1D84 /* ContactsViewController.h */,
-				776CFF9D1AB11E07000A1D84 /* ContactsViewController.m */,
+				77AC197A1AB6D8BB00E10559 /* BaseViewController.h */,
+				77AC197B1AB6D8BB00E10559 /* BaseViewController.m */,
 				77DB941E1AAFED400021A816 /* UIViewController+Helper.h */,
 				77DB941F1AAFED400021A816 /* UIViewController+Helper.m */,
 				77A1B9041AB027D5008C1C85 /* CallViewController.h */,
@@ -1094,7 +1082,6 @@
 				120A2C431AB17AFD006A28B1 /* sign14@2x.png in Resources */,
 				120A2BFF1AB13900006A28B1 /* PersonalBgImg.jpg in Resources */,
 				120A2C441AB17AFD006A28B1 /* sign15@2x.png in Resources */,
-				770BB4401AAD9D530098C214 /* 启动页（iPhone5）.png in Resources */,
 				770BB43A1AAD97700098C214 /* 密码图标@2x.png in Resources */,
 				2563B3F81AAAD74000C04227 /* Images.xcassets in Resources */,
 				12D0C8691AB67B9A0039A197 /* LoadDataLogo@2x.png in Resources */,
@@ -1105,7 +1092,6 @@
 				120A2C4D1AB17AFD006A28B1 /* sign24@2x.png in Resources */,
 				120A2C591AB17AFD006A28B1 /* sign3@2x.png in Resources */,
 				12D0C8671AB673910039A197 /* wxtRecharge@2x.png in Resources */,
-				770BB43F1AAD9D530098C214 /* 启动页（iPhone4）.png in Resources */,
 				777059AD1AAFDEC40097526C /* Localize.strings in Resources */,
 				120A2C4A1AB17AFD006A28B1 /* sign21@2x.png in Resources */,
 				120A2C4C1AB17AFD006A28B1 /* sign23@2x.png in Resources */,
@@ -1163,19 +1149,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77AC198A1AB6DB7600E10559 /* FetchPwdModel.m in Sources */,
 				120A2C691AB18579006A28B1 /* NSDate+Compare.m in Sources */,
 				77DB93FC1AAFE7BB0021A816 /* Tools.m in Sources */,
 				2563B4371AAADA9B00C04227 /* RegisterViewController.m in Sources */,
 				77DB94171AAFE9DD0021A816 /* UIColor+WXT.m in Sources */,
 				120A2BF51AB135DE006A28B1 /* UIFont+WXT.m in Sources */,
 				120A2C0B1AB16907006A28B1 /* UIImage+Render.m in Sources */,
+				77AC197F1AB6D90200E10559 /* BaseVC.m in Sources */,
 				120A2BEC1AB135DD006A28B1 /* SignViewController.m in Sources */,
 				2563B3ED1AAAD74000C04227 /* AppDelegate.m in Sources */,
 				12228A731AB1BABA00CF0800 /* RegistVC.m in Sources */,
 				77DB941B1AAFEB9B0021A816 /* NSString+Size.m in Sources */,
 				77A1B9061AB027D5008C1C85 /* CallViewController.m in Sources */,
+				77AC19881AB6DACF00E10559 /* LoginVC.m in Sources */,
 				120A2BF71AB135DE006A28B1 /* WXTUITableViewCell.m in Sources */,
-				778289501AAD3F61009E9BF3 /* RegistTableViewController.m in Sources */,
 				77DB94271AAFEEBC0021A816 /* UserAgent.m in Sources */,
 				77DB94181AAFE9DD0021A816 /* WXTWaitingHud.m in Sources */,
 				77DB94351AAFF2120021A816 /* RecentCell.m in Sources */,
@@ -1190,25 +1178,23 @@
 				77DB93FF1AAFE7DC0021A816 /* ChineseToPinyin.m in Sources */,
 				77DB94161AAFE9DD0021A816 /* LoadLabel.m in Sources */,
 				120A2BEE1AB135DD006A28B1 /* T_SignGifView.m in Sources */,
-				126CA3F81AB2B84000E08A0B /* CallVC.m in Sources */,
 				126CA3DE1AB2790D00E08A0B /* WXTMallVC.m in Sources */,
 				120A2BF21AB135DE006A28B1 /* UserInfoCommonCell.m in Sources */,
-				2563B4821AAAF06D00C04227 /* MainViewController.m in Sources */,
 				77DB94341AAFF2120021A816 /* ContactsCell.m in Sources */,
-				776CFF9E1AB11E07000A1D84 /* ContactsViewController.m in Sources */,
 				120A2BE61AB135DD006A28B1 /* UtilTool.m in Sources */,
 				120A2BE51AB135DD006A28B1 /* URLFeedData.m in Sources */,
 				126CA3F51AB2B74800E08A0B /* WXTUITabBarController.m in Sources */,
 				120A2BF81AB135DE006A28B1 /* KFLoger.m in Sources */,
-				12D039F11AB3489200DD7E56 /* BaseVC.m in Sources */,
 				126CA3DB1AB278FC00E08A0B /* WXTFindVC.m in Sources */,
-				2563B43A1AAADD5D00C04227 /* RootViewController.m in Sources */,
 				2563B3EA1AAAD74000C04227 /* main.m in Sources */,
+				77AC19981AB6E72800E10559 /* UIColor+WX.m in Sources */,
 				120A2BE91AB135DD006A28B1 /* RechargeVC.m in Sources */,
 				77DB93F11AAFE70D0021A816 /* MessageData.m in Sources */,
 				120A2C661AB1804E006A28B1 /* SignEntity.m in Sources */,
 				120A2BEA1AB135DD006A28B1 /* RechargeCell.m in Sources */,
+				77AC19921AB6DCA600E10559 /* CallVC.m in Sources */,
 				77DB93F01AAFE70D0021A816 /* RecentData.m in Sources */,
+				77AC197C1AB6D8BB00E10559 /* BaseViewController.m in Sources */,
 				126CA3D21AB2744600E08A0B /* WXTUserDefault.m in Sources */,
 				120A2BF11AB135DE006A28B1 /* UserBalanceVC.m in Sources */,
 				120A2BF01AB135DE006A28B1 /* BalanceModel.m in Sources */,
@@ -1225,17 +1211,15 @@
 				77DB93F91AAFE79D0021A816 /* NSString+Helper.m in Sources */,
 				120A2C121AB17038006A28B1 /* RechargeModel.m in Sources */,
 				126CA4121AB2FC9400E08A0B /* GainModel.m in Sources */,
-				2563B43D1AAADE6200C04227 /* BaseViewController.m in Sources */,
 				126CA3E71AB2844B00E08A0B /* UIDevice+screenType.m in Sources */,
 				120A2BED1AB135DD006A28B1 /* CalendarView.m in Sources */,
 				126CA3CE1AB2709D00E08A0B /* WXTUserOBJ.m in Sources */,
 				2563B48B1AAAFF6B00C04227 /* HttpNetUtils.m in Sources */,
 				2563B3F01AAAD74000C04227 /* RKWXT.xcdatamodeld in Sources */,
 				120A2C0E1AB1699F006A28B1 /* WXTUIButton.m in Sources */,
-				2563B4851AAAF22500C04227 /* LeftMenuViewController.m in Sources */,
+				77AC19951AB6E26400E10559 /* ContactsViewController.m in Sources */,
 				77DB94151AAFE9DD0021A816 /* ProgressView.m in Sources */,
 				12228A761AB1C0F200CF0800 /* RegistModel.m in Sources */,
-				120A2C081AB142D4006A28B1 /* LoginVC.m in Sources */,
 				120A2BE81AB135DD006A28B1 /* WXTURLFeedOBJ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -64,7 +64,7 @@
     
     //
     UINavigationBar * navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 44)];
-    
+    [self initUI];
     [_tableView registerNib:[UINib nibWithNibName:@"ContactsCell" bundle:nil] forCellReuseIdentifier:@"ContactsCell"];
     
     //add bottom line
@@ -98,6 +98,24 @@
 //    [_kvoController observe:_tableView keyPath:@"visibleCells" options:NSKeyValueObservingOptionOld block:^(id observer, id object, NSDictionary *change) {
 //        NSLog(@"visibleCells = %@", _tableView.visibleCells);
 //    }];
+}
+
+-(void)initUI{
+    UIView * topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+    topView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:topView];
+    
+    
+    searchDisplayController = [[UISearchDisplayController alloc]
+                                initWithSearchBar:_searchBar contentsController:self];
+    [searchDisplayController setSearchResultsDelegate:self];
+    [searchDisplayController setSearchResultsDataSource:self];
+    [searchDisplayController setDelegate:self];
+    
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 50, ScreenWidth, ScreenHeight - 46)];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
 }
 
 - (void)viewWillAppear:(BOOL)animated

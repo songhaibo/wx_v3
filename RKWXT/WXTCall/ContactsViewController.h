@@ -8,11 +8,14 @@
 
 #import "BaseViewController.h"
 #import "UserAgent.h"
-@interface ContactsViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
+@interface ContactsViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate,UISearchDisplayDelegate>{
+    
+    UISearchDisplayController * searchDisplayController;
+}
 
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleViewHeightLayoutConstraint;
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *titleView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
