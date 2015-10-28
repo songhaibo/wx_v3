@@ -473,13 +473,10 @@
 }
 
 -(void)toCatagaryListVC:(NSInteger)catID{
-//    WXTMallListWebVC *webViewVC = [[[WXTMallListWebVC alloc] init] autorelease];
-//    WXTUserOBJ *userObj = [WXTUserOBJ sharedUserOBJ];
-//    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:kSubShopID], @"shop_id", [NSNumber numberWithInteger:kMerchantID], @"sid", userObj.user, @"phone", [UtilTool newStringWithAddSomeStr:5 withOldStr:userObj.pwd], @"pwd", [NSNumber numberWithInteger:catID], @"cat_id", nil];
-//    [webViewVC initWithFeedType:WXT_UrlFeed_Type_NewMall_CatagaryList paramDictionary:dic];
-//    [self.wxNavigationController pushViewController:webViewVC];
-    ClassifyListVC *webViewVC = [[[ClassifyListVC alloc] init] autorelease];
-    webViewVC.cat_id = catID;
+    WXTMallListWebVC *webViewVC = [[[WXTMallListWebVC alloc] init] autorelease];
+    WXTUserOBJ *userObj = [WXTUserOBJ sharedUserOBJ];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:kSubShopID], @"shop_id", [NSNumber numberWithInteger:kMerchantID], @"sid", userObj.user, @"phone", [UtilTool newStringWithAddSomeStr:5 withOldStr:userObj.pwd], @"pwd", [NSNumber numberWithInteger:catID], @"cat_id", nil];
+    [webViewVC initWithFeedType:WXT_UrlFeed_Type_NewMall_CatagaryList paramDictionary:dic];
     [self.wxNavigationController pushViewController:webViewVC];
 }
 
